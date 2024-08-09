@@ -1,0 +1,36 @@
+<section class="Cart_Container">
+  <div class="Title">
+    <h1>MiCart</h1>
+  </div>
+  <table class="Cart_Table">
+    <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Amount</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+      @for (item of items; track $index) {
+        <tr>
+          <td>{{ item.product.name }}</td>
+          <td>{{ item.product.price }} €</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.product.price * item.quantity }} €</td>
+          <td>
+            <button class="Delete_Item" (click)="onDeleteCart(item.product.id)">Delete</button>
+          </td>
+        </tr>
+      }
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="3">Total</td>
+      <td colspan="1">{{total}} €</td>
+    </tr>
+    </tfoot>
+  </table>
+</section>
+

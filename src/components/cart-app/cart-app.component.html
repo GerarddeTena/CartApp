@@ -1,0 +1,23 @@
+<app-navbar
+  [items]="items"
+  (showCart)="setShowCart()"
+/>
+<main class="Main">
+  <div class="Catalog">
+    <app-catalog
+      [product]="products"
+      (productEvent)="onAddCart($event)"
+    />
+  </div>
+  @if (showCart) {
+    <app-modal-cart
+      [total]="total"
+      [items]="items"
+      (showCart)="setShowCart()"
+      (idProduct)="onDeleteCart($event)"
+    />
+  }
+
+
+</main>
+

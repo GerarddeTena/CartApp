@@ -1,0 +1,62 @@
+.Modal {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.Close_BTN {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    color: #bc65ff;
+    transition: 0.6s ease;
+  }
+}
+
+.Animation {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}

@@ -1,0 +1,28 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: antiquewhite;
+  color: black;
+
+  & .Catalog {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .Cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .Cart_Visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+  }
+}

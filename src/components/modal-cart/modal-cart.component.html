@@ -1,0 +1,13 @@
+
+<div class="Modal Animation fadeIn Cart">
+  <div>
+    @if (items.length > 0) {
+      <div class="Cart_Visible">
+        <app-cart [items]="items" [total]="total" (idProduct)="onDeleteCart($event)"/>
+        <button class="Close_BTN" (click)="setShowCart()">Close</button>
+      </div>
+    } @else {
+      <button class="Close_BTN" (click)="setShowCart()">Close</button>
+    }
+  </div>
+</div>

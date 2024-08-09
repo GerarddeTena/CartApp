@@ -1,0 +1,67 @@
+.Cart_Container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  & .Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  & .Cart_Table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 40rem;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+
+  & th, td {
+    padding: 8px;
+    border: 1px solid #212121;
+    color: white;
+  }
+
+  & th {
+    background-color: #bc65ff;
+    color: white;
+  }
+
+  & tbody tr:nth-child(even) {
+    background-color: #c37bff;
+    color: white;
+  }
+
+  & .Delete_Item {
+    cursor: pointer;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 0.25rem;
+
+    &:hover {
+      background-color: red;
+      color: white;
+      transition: 0.2s ease;
+    }
+
+    &:active {
+      transform: scale(0.8);
+    }
+  }
+}
+
+
+
+
+

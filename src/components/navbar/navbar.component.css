@@ -1,0 +1,40 @@
+.Navbar_Container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+  color: white;
+  width: 100vw;
+  height: 3rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    &:hover {
+      transform: scale(1.2);
+      transition: ease 0.25s;
+    }
+
+  }
+
+  & .Navbar_Group {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & ul, li {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+    }
+  }
+}
